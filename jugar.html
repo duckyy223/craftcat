@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatCraft - Jugar Directamente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="back-link">← Volver al inicio</a>
+            <div class="logo-section">
+                <h1 class="main-title">🐱 CatCraft</h1>
+                <p class="subtitle">Conecta directamente al servidor</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="play-direct-section">
+                <div class="ip-detail-card">
+                    <div class="card-header">
+                        <div class="icon animated-controller">🎮</div>
+                        <h2>Juega Directamente</h2>
+                        <p class="card-description">Abre tu cliente de Minecraft y conecta usando nuestra IP del servidor</p>
+                    </div>
+
+                    <div class="ip-main-container">
+                        <h3>IP del Servidor:</h3>
+                        <div class="ip-box">
+                            <input type="text" id="server-ip" value="mc.craftcat.es" readonly>
+                            <button class="copy-btn" onclick="copyIP()">
+                                <span class="copy-text">📋 Copiar IP</span>
+                                <span class="copied-text">✓ ¡Copiado!</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="instructions">
+                        <h3>¿Cómo conectarse?</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Abre Minecraft</h4>
+                                    <p>Inicia tu cliente de Minecraft Java Edition</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Multijugador</h4>
+                                    <p>Selecciona "Multijugador" en el menú principal</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Añadir Servidor</h4>
+                                    <p>Haz clic en "Añadir servidor" y pega la IP</p>
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>¡A Jugar!</h4>
+                                    <p>Conecta y disfruta de la aventura en CatCraft</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <p>💡 <strong>Consejo:</strong> Guarda el servidor en tu lista para acceder más rápido la próxima vez</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 CatCraft - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
