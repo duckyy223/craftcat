@@ -562,6 +562,11 @@ body::before {
     box-shadow: 0 25px 70px rgba(245, 158, 11, 0.4);
 }
 
+.nav-card.discord:hover {
+    border-color: #5865F2;
+    box-shadow: 0 25px 70px rgba(88, 101, 242, 0.4);
+}
+
 .nav-icon {
     font-size: 4rem;
     margin-bottom: 20px;
