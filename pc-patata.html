@@ -7,65 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <a href="index.html" class="back-link">< Volver al inicio</a>
-            <div class="logo-section">
-                <h1 class="main-title">CatCraft</h1>
-                <p class="subtitle">Launcher PC patata</p>
-            </div>
-        </header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="index.html">CatCraft</a>
+            <ul class="navbar-nav">
+                <li><a class="navbar-link" href="index.html">Home</a></li>
+                <li><a class="navbar-link" href="jugar.html">Jugar</a></li>
+                <li><a class="navbar-link" href="pc-normal.html">Launcher Normal</a></li>
+                <li><a class="navbar-link active" href="pc-patata.html">Launcher Patata</a></li>
+                <li><a class="navbar-link" href="discord.html">Discord</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <section class="download-section">
-                <div class="launcher-detail-card pc-patata-detail">
-                        <div class="card-header">
-                            <div class="icon"></div>
-                            <h2>Launcher PC patata</h2>
-                            <p class="card-description">Pensado para PCs viejos, portátiles quemados y máquinas que hacen ruido raro.</p>
-                        </div>
+    <main class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1 class="logo">Launcher PC patata</h1>
+                <p class="subtitle">Para PCs con pocos recursos.</p>
+            </header>
 
-                    <div class="features">
-                        <h3>Características:</h3>
-                        <ul>
-                            <li>Muy ligero y bastante rápido para lo que hay</li>
-                            <li>Configuración ajustada para que no explote el PC</li>
-                            <li>Bajo consumo de memoria (lo justo para que vaya)</li>
-                            <li>Experiencia jugable incluso en patatas</li>
-                        </ul>
-                    </div>
+            <section>
+                <h2>Descargas</h2>
+                <div class="download-buttons">
+                    <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-Pc-Patata-Launcher-Setup-1.0.0.exe" class="download-btn" download>
+                        <span class="btn-title">Versión normal (instalador)</span>
+                        <span class="btn-subtitle">Recomendado</span>
+                        <span class="btn-info">Archivo: .exe</span>
+                    </a>
 
-                    <div class="download-options">
-                        <h3>Elige tu versión:</h3>
-
-                        <div class="download-buttons">
-                            <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-Pc-Patata-Launcher-Setup-1.0.0.exe" class="download-btn primary large" download>
-                                <span class="btn-icon">[EXE]</span>
-                                <div class="btn-content">
-                                    <span class="btn-title">Versión Normal</span>
-                                    <span class="btn-subtitle">Instalador completo - Recomendado</span>
-                                    <span class="btn-info">Se instalará en tu sistema</span>
-                                </div>
-                            </a>
-
-                            <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-PC-PATATA-PORTABLE-1.0.0.exe" class="download-btn secondary large" download>
-                                <span class="btn-icon">ZIP</span>
-                                <div class="btn-content">
-                                    <span class="btn-title">Versión Portable</span>
-                                    <span class="btn-subtitle">Sin instalación necesaria</span>
-                                    <span class="btn-info">Úsalo desde cualquier carpeta o USB</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-PC-PATATA-PORTABLE-1.0.0.exe" class="download-btn" download>
+                        <span class="btn-title">Versión portable</span>
+                        <span class="btn-subtitle">Sin instalar</span>
+                        <span class="btn-info">Archivo: .exe</span>
+                    </a>
                 </div>
             </section>
-        </main>
+        </div>
+    </main>
 
-        <footer class="footer">
-            <p>© 2025 CatCraft - Todos los derechos reservados</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <p>© 2025 CatCraft</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

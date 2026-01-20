@@ -23,54 +23,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo-section">
-                <h1 class="main-title">CatCraft</h1>
-                <p class="subtitle">Servidor de Minecraft de gatos hecho a ratos</p>
-            </div>
-        </header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="index.html">CatCraft</a>
+            <ul class="navbar-nav">
+                <li><a class="navbar-link active" href="index.html">Home</a></li>
+                <li><a class="navbar-link" href="jugar.html">Jugar</a></li>
+                <li><a class="navbar-link" href="pc-normal.html">Launcher Normal</a></li>
+                <li><a class="navbar-link" href="pc-patata.html">Launcher Patata</a></li>
+                <li><a class="navbar-link" href="discord.html">Discord</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <section class="navigation-section">
-                <h2 class="section-title">¿Cómo quieres entrar al servidor?</h2>
+    <main class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1 class="logo">CatCraft</h1>
+                <p class="subtitle">Servidor de Minecraft. Entra, juega y ya.</p>
+                <img src="server-icon.png" alt="CatCraft" class="hero-image">
+            </header>
 
-                <div class="nav-cards">
-                    <a href="jugar.html" class="nav-card play-direct">
-                        <div class="nav-icon"></div>
-                        <h3>Jugar directamente</h3>
-                        <p>Usar la IP de siempre</p>
-                        <span class="nav-arrow">>></span>
-                    </a>
+            <section class="intro">
+                <p>Si vienes a jugar: usa la IP. Si vienes a liarte con el launcher: elige tu versión. Si vienes a hablar: Discord.</p>
+            </section>
 
-                    <a href="pc-normal.html" class="nav-card pc-normal">
-                        <div class="nav-icon"></div>
-                        <h3>Launcher PC normal</h3>
-                        <p>Para PCs que tiran bien</p>
-                        <span class="nav-arrow">>></span>
-                    </a>
-
-                    <a href="pc-patata.html" class="nav-card pc-patata">
-                        <div class="nav-icon"></div>
-                        <h3>Launcher PC patata</h3>
-                        <p>Para PCs que sufren pero aún aguantan</p>
-                        <span class="nav-arrow">>></span>
-                    </a>
-
-                    <a href="discord.html" class="nav-card discord">
-                        <div class="nav-icon"></div>
-                        <h3>Discord</h3>
-                        <p>Chat, memes y quejas del lag</p>
-                        <span class="nav-arrow">>></span>
-                    </a>
+            <section>
+                <h2>Enlaces</h2>
+                <div class="api-card">
+                    <h3><a href="jugar.html">Jugar (IP)</a></h3>
+                    <p class="description">Conectar con la IP del servidor.</p>
+                </div>
+                <div class="api-card">
+                    <h3><a href="pc-normal.html">Launcher PC normal</a></h3>
+                    <p class="description">Para PCs que tiran bien.</p>
+                </div>
+                <div class="api-card">
+                    <h3><a href="pc-patata.html">Launcher PC patata</a></h3>
+                    <p class="description">Para PCs que sufren pero aún aguantan.</p>
+                </div>
+                <div class="api-card">
+                    <h3><a href="discord.html">Discord</a></h3>
+                    <p class="description">Chat y avisos del server.</p>
                 </div>
             </section>
-        </main>
+        </div>
+    </main>
 
-        <footer class="footer">
-            <p>© 2025 CatCraft - Todos los derechos reservados</p>
-        </footer>
-    </div>
+    <footer class="footer">
+        <p>© 2025 CatCraft</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

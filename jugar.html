@@ -7,83 +7,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <a href="index.html" class="back-link">< Volver al inicio</a>
-            <div class="logo-section">
-                <h1 class="main-title">CatCraft</h1>
-                <p class="subtitle">Conecta directamente al servidor</p>
-            </div>
-        </header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a class="navbar-logo" href="index.html">CatCraft</a>
+            <ul class="navbar-nav">
+                <li><a class="navbar-link" href="index.html">Home</a></li>
+                <li><a class="navbar-link active" href="jugar.html">Jugar</a></li>
+                <li><a class="navbar-link" href="pc-normal.html">Launcher Normal</a></li>
+                <li><a class="navbar-link" href="pc-patata.html">Launcher Patata</a></li>
+                <li><a class="navbar-link" href="discord.html">Discord</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <main class="main-content">
-            <section class="play-direct-section">
-                <div class="ip-detail-card">
-                        <div class="card-header">
-                            <div class="icon animated-controller"></div>
-                            <h2>Jugar directamente</h2>
-                            <p class="card-description">Abre tu Minecraft de siempre y pon esta IP</p>
-                        </div>
+    <main class="main-content">
+        <div class="container">
+            <header class="header">
+                <h1 class="logo">Jugar</h1>
+                <p class="subtitle">IP del servidor y ya.</p>
+            </header>
 
-                    <div class="ip-main-container">
-                        <h3>IP del Servidor:</h3>
-                        <div class="ip-box">
-                            <input type="text" id="server-ip" value="mc.craftcat.es" readonly>
-                            <button class="copy-btn" onclick="copyIP()">
-                                <span class="copy-text">Copiar IP</span>
-                                <span class="copied-text">IP copiada</span>
-                            </button>
-                        </div>
+            <section>
+                <h2>IP</h2>
+                <div class="ip-main-container">
+                    <div class="ip-box">
+                        <input type="text" id="server-ip" value="mc.craftcat.es" readonly>
+                        <button class="copy-btn" onclick="copyIP()">
+                            <span class="copy-text">Copiar</span>
+                            <span class="copied-text">Copiado</span>
+                        </button>
                     </div>
-
-                    <div class="instructions">
-                        <h3>¿Cómo conectarse?</h3>
-                        <div class="steps">
-                            <div class="step">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4>Abre Minecraft</h4>
-                                    <p>Inicia tu cliente de Minecraft Java Edition</p>
-                                </div>
-                            </div>
-
-                            <div class="step">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4>Multijugador</h4>
-                                    <p>Selecciona "Multijugador" en el menú principal</p>
-                                </div>
-                            </div>
-
-                            <div class="step">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4>Añadir Servidor</h4>
-                                    <p>Haz clic en "Añadir servidor" y pega la IP</p>
-                                </div>
-                            </div>
-
-                            <div class="step">
-                                <div class="step-number">4</div>
-                                <div class="step-content">
-                                    <h4>¡A Jugar!</h4>
-                                    <p>Conecta y disfruta de la aventura en CatCraft</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                        <div class="info-box">
-                            <p><strong>Consejo:</strong> guarda el servidor en tu lista y así no tienes que escribir la IP cada vez.</p>
-                        </div>
                 </div>
             </section>
-        </main>
 
-        <footer class="footer">
-            <p>© 2025 CatCraft - Todos los derechos reservados</p>
-        </footer>
-    </div>
+            <section>
+                <h2>Pasos</h2>
+                <div class="api-card">
+                    <p class="description">Multijugador -> Añadir servidor -> pega la IP -> conectar.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 CatCraft</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
