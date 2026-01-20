@@ -7,44 +7,59 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a class="navbar-logo" href="index.html">CatCraft</a>
-            <ul class="navbar-nav">
-                <li><a class="navbar-link" href="index.html">Home</a></li>
-                <li><a class="navbar-link" href="jugar.html">Jugar</a></li>
-                <li><a class="navbar-link" href="pc-normal.html">Launcher Normal</a></li>
-                <li><a class="navbar-link active" href="pc-patata.html">Launcher Patata</a></li>
-                <li><a class="navbar-link" href="discord.html">Discord</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
+        <header class="header">
+            <a href="index.html" class="back-link">← Volver al inicio</a>
+            <div class="logo-section">
+                <h1 class="main-title">CatCraft</h1>
+                <p class="subtitle">Launcher PC Patata</p>
+            </div>
+        </header>
 
-    <main class="main-content">
-        <div class="container">
-            <header class="header">
-                <h1 class="logo">Launcher PC patata</h1>
-                <p class="subtitle">Para PCs con pocos recursos.</p>
-            </header>
+        <main class="main-content">
+            <section class="download-section">
+                <div class="launcher-detail-card">
+                    <div class="card-header">
+                        <h2>Launcher PC Patata</h2>
+                        <p class="card-description">Optimizado especialmente para equipos con recursos limitados. Juega sin preocuparte por el rendimiento de tu PC.</p>
+                    </div>
 
-            <section>
-                <h2>Descargas</h2>
-                <div class="download-buttons">
-                    <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-Pc-Patata-Launcher-Setup-1.0.0.exe" class="download-btn" download>
-                        <span class="btn-title">Versión normal (instalador)</span>
-                        <span class="btn-subtitle">Recomendado</span>
-                        <span class="btn-info">Archivo: .exe</span>
-                    </a>
+                    <div class="features">
+                        <h3>Características:</h3>
+                        <ul>
+                            <li>Ultraligero y rápido</li>
+                            <li>Configuración optimizada automática</li>
+                            <li>Bajo consumo de memoria RAM</li>
+                            <li>Experiencia fluida garantizada</li>
+                        </ul>
+                    </div>
 
-                    <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-PC-PATATA-PORTABLE-1.0.0.exe" class="download-btn" download>
-                        <span class="btn-title">Versión portable</span>
-                        <span class="btn-subtitle">Sin instalar</span>
-                        <span class="btn-info">Archivo: .exe</span>
-                    </a>
+                    <div class="download-options">
+                        <h3>Elige tu versión:</h3>
+
+                        <div class="download-buttons">
+                            <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-Pc-Patata-Launcher-Setup-1.0.0.exe" class="download-btn primary large" download>
+                                <span class="btn-icon">[EXE]</span>
+                                <div class="btn-content">
+                                    <span class="btn-title">Versión Normal</span>
+                                    <span class="btn-subtitle">Instalador completo - Recomendado</span>
+                                    <span class="btn-info">Se instalará en tu sistema</span>
+                                </div>
+                            </a>
+
+                            <a href="https://github.com/duckyy223/craftcat/releases/download/Launcher/CatCraft-PC-PATATA-PORTABLE-1.0.0.exe" class="download-btn secondary large" download>
+                                <span class="btn-icon">ZIP</span>
+                                <div class="btn-content">
+                                    <span class="btn-title">Versión Portable</span>
+                                    <span class="btn-subtitle">Sin instalación necesaria</span>
+                                    <span class="btn-info">Úsalo desde cualquier carpeta o USB</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </div>
-    </main>
+        </main>
 
     <footer class="footer">
         <p>© 2025 CatCraft</p>
